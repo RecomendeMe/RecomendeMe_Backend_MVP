@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_10_234321) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_12_203946) do
   create_table "recomendacoes", force: :cascade do |t|
     t.string "titulo"
     t.string "artista"
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_10_234321) do
     t.string "img"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "reclink"
   end
 
   create_table "useres", force: :cascade do |t|

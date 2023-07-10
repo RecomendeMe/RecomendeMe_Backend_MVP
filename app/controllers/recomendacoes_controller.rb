@@ -65,6 +65,6 @@ class RecomendacoesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def recomendacao_params
-      params.require(:recomendacao).permit(:artista, :titulo, :img, :desc)
+      params.require(:recomendacao).permit(:artista, :titulo, :img, :desc, :user_id, :reclink)
     end
 end
